@@ -1,0 +1,493 @@
+/*-FUENTES-*/
+@font-face {
+    font-family: ttl;
+    src:
+      url(../fuentes/Mayan.ttf) format("opentype");
+  }
+@font-face {
+    font-family: cht;
+    src:
+      url(../fuentes/Cohaerentia-Regular.ttf) format("opentype");
+  }
+  
+  
+  /*-------Estilo general de la pag-------*/
+  * {
+   
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  h1,
+  a {
+    font-family: ttl;
+    font-size: 30px;
+    font-weight: 100;
+    text-align: center;
+  }
+  
+  body {
+    font-family: ttl;
+    width: 1024px;
+    background-color: #fed5db;
+    margin: auto;
+    
+    overflow-x: hidden
+  }
+ 
+    
+
+  
+  
+  /*------NOSOTROS------*/
+  .titulos{
+    color:#472f33;
+    font-family: ttl;
+    font-size:30px;
+    font-weight:500;
+    margin-top:80px;
+    text-transform:uppercase;
+  }
+  .titulos2{
+    color:#000;
+    font-family: cht;
+    font-size:25px;
+    font-weight:200;
+    letter-spacing:-2px;
+    line-height:20px;
+    margin:0;
+    text-transform:uppercase;
+  }
+  .titulos3{
+    color:#472f33;
+    font-family: ttl;
+    font-size: 35px;
+    font-weight:200;
+    line-height:40px;
+    margin:0;
+    text-align:right;
+  }
+  /*------CARA AXOLOTE--------POSICION Y ANIMACION---------------*/
+  .cara {
+    width:"90px"; 
+    height:"60px"; 
+    animation: rotate 4s infinite;
+  }
+  @keyframes rotate {
+    0% {
+      transform: rotate(20deg);
+    }
+  
+    50% {
+      transform: rotate(-20deg);
+    }
+  
+    100% {
+      transform: rotate(20deg);
+    }
+
+
+  }
+  #contenedor-nosotros{
+    width:900%;
+  }
+  #img-local{
+    margin-top: 80px;
+   
+  }
+  #contenedor-nosotros img{
+    display:inline-block;
+    margin-left:5px;
+    vertical-align:top;
+  }
+  #contenedor-nosotros-textos{
+    font-family: ttl;
+    display:inline-block;
+    vertical-align:top;
+    width:480px;
+  }
+  #contenedor-nosotros-textos p{
+    color: #401C19;
+    font-family: cht;
+    font: size 25px;
+    text-align:justify;
+  }
+  #contenedor-nosotros-textos{
+    width:485px;
+  }
+  /*---barra division----*/
+  #contenedor-nosotros-textos1{
+    margin-top:10px;
+  }
+  #contenedor-nosotros-textos1 img{
+    display:inline-block;
+    margin-left:15px;
+    vertical-align:middle;
+  }
+  #contenedor-nosotros-textos1 p{
+    display:inline-block;
+    color: #401C19;
+    font-family: cht;
+    font: size 25px;
+    vertical-align:middle;
+    width:300px;
+  }
+ /*--------------------------------CONTENEDOR 2-------------------------------*/
+
+ 
+  #contenedor-nosotros2{
+    
+    background-position:center top;
+    background-repeat:no-repeat;
+    margin-top:10px;
+    width:100%;
+  }
+  #contenedor-nosotros2-1{
+    display:inline-block;
+    font-family: ttl;
+    margin-left:14px;
+    padding:15px 0;
+    text-align:center;
+    width:32%;
+  }
+  #contenedor-nosotros2-1:first-child{
+    margin-left:0;
+    padding-left:0;
+  }
+  #contenedor-nosotros2-1 img{
+    display:inline-block;
+    vertical-align:middle;
+  }
+  #contenedor-nosotros2-1 h2{
+    color:#472f33;
+    font-family: ttl;
+    font-size:25px;
+    display:inline-block;
+    vertical-align:middle;
+    /*width:90px;*/
+  }
+  #contenedor-nosotros2-1-texto{
+    border-left:0;
+    display:inline-block;
+    margin-top:10px;
+    padding-left:0;
+    vertical-align:top;
+    width:30%;
+  }
+  #contenedor-nosotros2-1-texto p{
+    color: #401C19;
+    font-family: cht;
+    font: size 25px;
+    text-align:justify;
+  }
+  #contenedor-nosotros2-2-texto{
+    border-left:1px solid #ddd;
+    border-right:1px solid #ddd;
+    display:inline-block;
+    margin:10px 22px 0 22px;
+    padding:0 22px;
+    vertical-align:top;
+    width:30%;
+  }
+  #contenedor-nosotros2-2-texto p{
+    color: #401C19;
+    font-family: cht;
+    font: size 25px;
+    text-align:justify;
+  }
+
+  
+  /*-----SEGUNDO ASIDE contacto--------*/
+  #segundo {
+    margin-top: 40px;
+    background-color: #f8dce0;
+    height: 300px;
+  }
+ 
+  .map {
+    background-color: transparent;
+    border-style: none;
+    margin-top: 40px;
+    width: 100%;
+    height: 200px;
+  }
+  
+  .mapttl {
+    margin: 0;
+  }
+  
+  .precios {
+    background-color: #f6e4e7;
+    height: 200px;
+    padding: 10px;
+    font-family: ttl;
+    font-size: 18px;
+    color: #472f33;
+  }
+ 
+  .direccion {
+    background-color: #f6e4e7;
+    height: 100px;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+  }
+  
+  .direccion span {
+    font-style: italic;
+  }
+  
+  
+ /*-----FOOOTER--------*/
+ footer {
+  background-color: #cda6ab;
+  display: flex;
+  height: 90px;
+  font-family: cht;
+  font-size: 18px;
+  color: #472f33;
+}
+
+footer .funo {
+  width: 25%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+footer .whats {
+  width: 30px;
+  height: 20px;
+  justify-content: center;
+}
+/*-----@media--------*/
+@media screen and (max-width: 479px) {
+  h1,
+  a {
+    font-family: ttl;
+    font-size: 20px;
+    font-weight: 50;
+    text-align: center;
+  }
+  
+  body {
+    font-family: ttl;
+    width: 450px;
+    background-color: #fed5db;
+    margin: auto;
+    
+    overflow-x: hidden
+  }
+ 
+    
+
+  
+  
+  /*------NOSOTROS------*/
+  .titulos{
+    color:#472f33;
+    font-family: ttl;
+    font-size:15px;
+    font-weight:500;
+    margin-top:80px;
+    text-transform:uppercase;
+  }
+  .titulos2{
+    color:#000;
+    font-family: cht;
+    font-size:15px;
+    font-weight:200;
+    letter-spacing:-2px;
+    line-height:10px;
+    margin: 5px;
+    text-transform:uppercase;
+  }
+  .titulos3{
+    color:#472f33;
+    font-family: ttl;
+    font-size: 15px;
+    font-weight:200;
+    line-height:20px;
+    margin: 10px;
+    text-align:left;
+  }
+  /*------CARA AXOLOTE--------POSICION Y ANIMACION---------------*/
+  .cara {
+    width:"90px"; 
+    height:"60px"; 
+   
+  }
+  
+  #contenedor-nosotros{
+    width:900%;
+  }
+  #img-local{
+    margin-top: 60px;
+   
+  }
+  #contenedor-nosotros img{
+    display:inline-block;
+    margin-left:5px;
+    vertical-align:left;
+  }
+  #contenedor-nosotros-textos{
+    font-family: ttl;
+    display:inline-block;
+    vertical-align:left;
+    width:480px;
+  }
+  #contenedor-nosotros-textos p{
+    color: #401C19;
+    font-family: cht;
+    font: size 25px;
+    text-align:justify;
+  }
+  #contenedor-nosotros-textos{
+    width: 240px;
+  }
+  /*---barra division----*/
+  #contenedor-nosotros-textos1{
+    margin-top:10px;
+  }
+  #contenedor-nosotros-textos1 img{
+    display:inline-block;
+    margin-left:15px;
+    vertical-align:left;
+  }
+  #contenedor-nosotros-textos1 p{
+    display:inline-block;
+    color: #401C19;
+    font-family: cht;
+    font: size 25px;
+    vertical-align:left;
+    width:300px;
+  }
+ /*--------------------------------CONTENEDOR 2-------------------------------*/
+
+ 
+  #contenedor-nosotros2{
+    
+    background-position:center top;
+    background-repeat:no-repeat;
+    margin-top:10px;
+    width:100%;
+  }
+  #contenedor-nosotros2-1{
+    display:flex;
+    font-family: ttl;
+    margin-left:14px;
+    padding:15px 0;
+    text-align:left;
+    width:32%;
+  }
+  #contenedor-nosotros2-1:first-child{
+    margin-left:0;
+    padding-left:0;
+  }
+  
+  #contenedor-nosotros2-1 h2{
+    color:#472f33;
+    font-family: ttl;
+    font-size:25px;
+    display:flex;
+    vertical-align:left;
+    
+  }
+  #contenedor-nosotros2-1-texto{
+    border-left:0;
+    display:flex;
+    margin-top:10px;
+    padding-left:0;
+    vertical-align:left;
+    width:30%;
+  }
+  #contenedor-nosotros2-1-texto p{
+    color: #401C19;
+    font-family: cht;
+    font: size 25px;
+    text-align:justify;
+  }
+  #contenedor-nosotros2-2-texto{
+    border-left:1px solid #ddd;
+    border-right:1px solid #ddd;
+    display:inline-block;
+    margin:10px 10px 0 10px;
+    padding:0 10px;
+    vertical-align:left;
+    width:30%;
+  }
+  #contenedor-nosotros2-2-texto p{
+    color: #401C19;
+    font-family: cht;
+    font: size 25px;
+    text-align:left;
+  }
+
+  
+  /*-----SEGUNDO ASIDE contacto--------*/
+  #segundo {
+    margin-top: 40px;
+    background-color: #f8dce0;
+    height: 300px;
+  }
+ 
+  .map {
+    background-color: transparent;
+    border-style: none;
+    margin-top: 40px;
+    width: 100%;
+    height: 200px;
+  }
+  
+  .mapttl {
+    margin: 0;
+  }
+  
+  .precios {
+    background-color: #f6e4e7;
+    height: 200px;
+    padding: 10px;
+    font-family: ttl;
+    font-size: 18px;
+    color: #472f33;
+  }
+ 
+  .direccion {
+    background-color: #f6e4e7;
+    height: 100px;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+  }
+  
+  .direccion span {
+    font-style: italic;
+  }
+  
+  
+ /*-----FOOOTER--------*/
+ footer {
+  background-color: #cda6ab;
+  display: flex;
+  height: 900px;
+  font-family: cht;
+  font-size: 8px;
+  color: #472f33;
+}
+
+footer .funo {
+  width: 10%;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  margin-top: 2px;
+}
+
+footer .whats {
+  width: 15px;
+  height: 10px;
+  justify-content: center;
+}
+}
